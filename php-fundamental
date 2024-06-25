@@ -70,3 +70,62 @@ $logaritmo = log10($numero);
 echo "Logaritmo base 10: $logaritmo\n";
 
 
+
+//operadores logicos y de comparacion
+//AND => &&
+//OR => ||
+//NOT => !
+
+// Verificar si un usuario tiene acceso a un recurso
+$esUsuarioRegistrado = true;
+$tienePermisos = $esUsuarioRegistrado && $haVerificadoSuCorreoElectronico;
+
+if ($tienePermisos) {
+  echo "El usuario tiene acceso al recurso.";
+} else {
+  echo "El usuario no tiene acceso al recurso.";
+}
+
+//operadores de comparacion
+
+/*
+
+==
+!=
+>
+<
+<=
+>=
+
+
+*/
+
+// Calcular la calificación final de un estudiante
+$notaExamen1 = 80;
+$notaExamen2 = 75;
+$notaTrabajoFinal = 90;
+
+$promedio = ($notaExamen1 + $notaExamen2 + $notaTrabajoFinal) / 3;
+
+if ($promedio >= 90) {
+  $calificacionFinal = "Sobresaliente";
+} else if ($promedio >= 80) {
+  $calificacionFinal = "Notable";
+} else if ($promedio >= 70) {
+  $calificacionFinal = "Bueno";
+} else {
+  $calificacionFinal = "Suficiente";
+}
+
+echo "Calificación final: $calificacionFinal\n";
+
+
+
+
+
+
+
+
+
+
+
