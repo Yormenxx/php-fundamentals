@@ -47,3 +47,26 @@ echo $resta . "<br>";
 echo $division . "<br>";
 echo $modulo . "<br>";
 echo $potencia . "<br>";
+
+
+
+// Calcular el área de un triángulo (base * altura / 2)
+$base = 10;
+$altura = 8;
+$areaTriangulo = $base * $altura / 2;
+echo "Área del triángulo: $areaTriangulo\n";
+
+// Calcular la distancia entre dos puntos (usando la fórmula de la distancia euclidiana)
+$punto1X = 2;
+$punto1Y = 5;
+$punto2X = 7;
+$punto2Y = 3;
+$distancia = sqrt(pow($punto2X - $punto1X, 2) + pow($punto2Y - $punto1Y, 2));
+echo "Distancia entre puntos: $distancia\n";
+
+// Calcular el logaritmo base 10 de un número
+$numero = 100;
+$logaritmo = log10($numero);
+echo "Logaritmo base 10: $logaritmo\n";
+
+
