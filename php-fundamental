@@ -1,0 +1,49 @@
+<?php
+
+echo "hola mundo";
+//variables
+
+$nombre="juan";
+$apellido="ortiz";
+$nombre_completo=$nombre . $apellido;
+//cadenas se concatenasn con punto
+//numbers se concatenan con +
+echo $nombre_completo;
+
+//constantes
+//define(nombre variable,valor de la variable)
+
+define("PI",3.14154);
+
+echo PI;
+
+
+//int float null y bool
+
+$edad =30;//integer
+$dinero=3.234;//float
+$noValor = null;
+$conducir = true;
+
+//casting
+intval($dinero);
+
+strval($edad);
+echo gettype($edad);
+
+floatval($edad);
+echo gettype($dinero);
+
+//operadores matematicos
+
+$suma =5+5 ;
+$resta =5-6;
+$division = 7/8;
+$modulo =6%2;
+$potencia=4**2;
+
+echo $suma . "<br>";
+echo $resta . "<br>";
+echo $division . "<br>";
+echo $modulo . "<br>";
+echo $potencia . "<br>";
