@@ -119,6 +119,83 @@ if ($promedio >= 90) {
 
 echo "Calificación final: $calificacionFinal\n";
 
+// if, else if
+/*
+if (condicion) {
+    // Código a ejecutar si la condición es true
+  } else {
+    // Código a ejecutar si la condición es false
+}
+*/
+//switch
+
+/*
+switch (variable) {
+    case valor1:
+      // Código a ejecutar si la variable es igual a valor1
+      break;
+    case valor2:
+      // Código a ejecutar si la variable es igual a valor2
+      break;
+    default:
+      // Código a ejecutar si la variable no tiene un valor coincidente
+}
+*/
+$edad = 18;
+
+if ($edad >= 18) {
+  echo "El usuario es mayor de edad";
+} else {
+  echo "El usuario es menor de edad";
+}
+
+
+$nota = 85;
+
+switch ($nota) {
+  case 100:
+    echo "Sobresaliente";
+    break;
+  case 90:
+  case 95:
+    echo "Notable";
+    break;
+  case 80:
+  case 85:
+    echo "Bueno";
+    break;
+  case 70:
+  case 75:
+    echo "Suficiente";
+    break;
+  default:
+    echo "Insuficiente";
+}
+
+//bucles
+
+$contador =1;
+
+while($contador <=10){
+    echo $contador;
+    $contador++;
+}
+
+$contador2=1;
+
+
+do{
+    echo "Numero: $contador2 \n";
+    $contador++;
+}while($contador <=10);
+
+for ($i = 0 ; $i<10 ; $i++){
+    echo"En el bloque for: $i";
+}
+
+
+
+
 
 
 
