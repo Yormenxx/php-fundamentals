@@ -194,6 +194,130 @@ for ($i = 0 ; $i<10 ; $i++){
 }
 
 
+//funciones
+
+
+echo "tiempo" .time() ,"<br>";
+echo "pi" .pi() ,"<br>";
+echo "raiz de nueve" .sqrt(9), "<br>";
+echo "redondeo" .rand(90,100) ,"<br>"; 
+
+
+//calculando factoriales
+
+
+function factorial(){
+
+  $result = 1;
+
+  for($i = 1;$i <=9; $i++){
+
+    $result = $result * $i;
+
+
+  }
+
+  echo "el valor del factoria de 9 es: " . $result, "<br>";
+
+
+}
+
+factorial();
+
+// pasar facotrial por parametro
+
+function factorialParametro($factor){
+
+  $resultado = 1;
+
+  for($i = 1;$i <=$factor; $i++){
+
+    $resultado = $resultado * $i;
+
+
+  }
+
+
+  echo "el valor del factorial, cuyo factor " . $factor , " es: " . $resultado ,"<br>";
+}
+
+
+factorialParametro(10);
+
+
+//Ambito de las variables
+
+$a = 54;
+
+function ambito(){
+
+  global $a;
+  $a = 3;
+
+  echo $a , "<br>";
+
+}
+
+ambito();
+
+//funciones con argumentos fijos 
+
+
+function valoracion ($curso, $valor = 5){
+
+  echo "el curso llamado $curso valorado con $valor";
+
+}
+
+valoracion("curso de python");
+
+
+$frutas = array("manzana" => "roja", "naranja" => "naranja", "banana" => "amarilla");
+
+foreach ($frutas as $fruta => $color) {
+  echo "$fruta: $color\n";
+}
+
+//funciones con tipado
+
+function sumar(int $valor1 , int $valor2):int | float
+{
+
+  return $valor1 + $valor2;
+
+
+}
+
+echo sumar(1,2);
+
+//cadenas de texto
+
+$cadena= "aeiou";
+
+echo strlen($cadena);
+
+
+//array unidimensional
+
+$array = [1,2,3,4];
+
+echo $array[3];
+
+
+$array2 = [1,"juan",3,"pera"];
+
+echo $array2[3];
+
+$array3 = [
+
+  "manzana" => "roja",
+  "pera" => "verde",
+  "banano" => "amarillo",
+
+
+
+
+]
 
 
 
